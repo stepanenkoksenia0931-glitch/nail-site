@@ -1,0 +1,792 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #2b2425;
+    background: #fdf8f7;
+}
+
+
+/* ШАПКА */
+
+.header {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    color: #2b2425;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #b98282;
+}
+
+.header-button {
+    color: #ffffff;
+    background: #b98282;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background: #9f6d6d;
+}
+
+
+/* ГЛАВНЫЙ ЭКРАН */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
+    background: #f3e5e3;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    color: #ffffff;
+    background: #b98282;
+    text-decoration: none;
+    padding: 17px 35px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #9f6d6d;
+}
+
+
+/* ЗАГОЛОВКИ СЕКЦИЙ */
+
+.section-title {
+    max-width: 600px;
+    margin-bottom: 70px;
+}
+
+.section-title p {
+    color: #b98282;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 500;
+}
+
+
+/* ПРЕИМУЩЕСТВА */
+
+.advantages {
+    padding: 120px 7%;
+    background: #fdf8f7;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.advantage-card {
+    min-height: 240px;
+    padding: 35px 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(100, 60, 60, 0.08);
+}
+
+.advantage-number {
+    color: #b98282;
+    font-size: 14px;
+    margin-bottom: 55px;
+}
+
+.advantage-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.advantage-card p {
+    color: #756b6c;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* УСЛУГИ */
+
+.services {
+    padding: 120px 7%;
+    background: #ffffff;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    min-height: 300px;
+    padding: 40px;
+    border: 1px solid #eee2e0;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(100, 60, 60, 0.08);
+}
+
+.service-top {
+    display: flex;
+    justify-content: space-between;
+    color: #b98282;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.service-card h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.service-card p {
+    max-width: 500px;
+    color: #756b6c;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.service-link {
+    color: #2b2425;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.service-link:hover {
+    color: #b98282;
+}
+
+
+/* ПОРТФОЛИО */
+
+.works {
+    padding: 120px 7%;
+    background: #fdf8f7;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 280px 280px;
+    gap: 20px;
+}
+
+.work-card {
+    overflow: hidden;
+    border-radius: 20px;
+    background: #ead8d5;
+}
+
+.work-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.work-card:hover img {
+    transform: scale(1.05);
+}
+
+.work-large {
+    grid-row: span 2;
+}
+
+
+/* О МАСТЕРЕ */
+
+.about-master {
+    padding: 120px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+    background: #ffffff;
+}
+
+.master-photo {
+    height: 600px;
+    overflow: hidden;
+    border-radius: 25px;
+    background: #ead8d5;
+}
+
+.master-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.master-info {
+    max-width: 550px;
+}
+
+.master-label {
+    color: #b98282;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.master-info h2 {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.master-text {
+    color: #756b6c;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.master-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 16px 30px;
+    color: #ffffff;
+    background: #b98282;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+
+/* ОТЗЫВЫ */
+
+.reviews {
+    padding: 120px 7%;
+    background: #f3e5e3;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    min-height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(100, 60, 60, 0.08);
+}
+
+.review-stars {
+    color: #b98282;
+    letter-spacing: 4px;
+}
+
+.review-card > p {
+    color: #756b6c;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 30px 0;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.review-author span {
+    color: #9a8d8e;
+    font-size: 13px;
+}
+
+
+/* КОНТАКТЫ */
+
+.contacts {
+    padding: 120px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    background: #ffffff;
+}
+
+.contacts-info {
+    max-width: 550px;
+}
+
+.contacts-label,
+.booking-label {
+    color: #b98282;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.contacts-info h2 {
+    font-size: 52px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.contacts-text {
+    color: #756b6c;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-item span {
+    color: #9a8d8e;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.contact-item strong {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* ФОРМА */
+
+.booking {
+    padding: 45px;
+    background: #f3e5e3;
+    border-radius: 25px;
+}
+
+.booking h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking input,
+.booking select {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #dfcecb;
+    border-radius: 12px;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+.booking input:focus,
+.booking select:focus {
+    border-color: #b98282;
+}
+
+.booking button {
+    border: none;
+    padding: 18px;
+    border-radius: 30px;
+    background: #b98282;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* ФУТЕР */
+
+.footer {
+    padding: 50px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: #2b2425;
+    color: #ffffff;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #cfc3c4;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* ПЛАНШЕТ */
+
+@media (max-width: 1000px) {
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts {
+        gap: 50px;
+    }
+}
+
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .header-button {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .advantages,
+    .services,
+    .works,
+    .about-master,
+    .reviews,
+    .contacts {
+        padding: 80px 20px;
+    }
+
+    .section-title {
+        margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .advantages-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .work-large {
+        grid-row: auto;
+    }
+
+    .work-card {
+        height: 300px;
+    }
+
+    .about-master {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .master-photo {
+        height: 450px;
+    }
+
+    .master-info h2 {
+        font-size: 36px;
+    }
+
+    .contacts {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-info h2 {
+        font-size: 40px;
+    }
+
+    .booking {
+        padding: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.success-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(43, 36, 37, 0.55);
+    z-index: 1000;
+}
+
+.success-modal.active {
+    display: flex;
+}
+
+.success-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    padding: 45px 35px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+    animation: modalShow 0.3s ease;
+}
+
+@keyframes modalShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+.success-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #756b6c;
+    cursor: pointer;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f3e5e3;
+    color: #b98282;
+    font-size: 30px;
+}
+
+.success-modal-content h3 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.success-modal-content p {
+    margin-bottom: 30px;
+    color: #756b6c;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.success-button {
+    width: 100%;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #b98282;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.success-button:hover {
+    background: #9f6d6d;
+}
+.menu-button {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    color: #2b2425;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    .menu-button {
+        display: block;
+        order: 2;
+    }
+
+    .navigation {
+        display: none;
+        order: 4;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
